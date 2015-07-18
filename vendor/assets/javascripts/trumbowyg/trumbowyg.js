@@ -906,6 +906,7 @@
             })
             .on('submit', function(e){
                 e.preventDefault();
+                e.stopPropagation();
                 $modal.trigger(pfx + 'confirm');
             })
             .on('reset', function(e){
